@@ -1,8 +1,8 @@
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Hace que el cambio entre secciones de la pagina sea suave cuando se utilizan los elementos a */
 }
-*:not(a){
-    cursor: default;
+*:not(a){ /* Todos los elementos menos el que se indica en los parentesis del not */
+    cursor: default; 
 }
 .h1S{
     font-size: 50px;
@@ -47,18 +47,19 @@ html{
     padding: 14px 10px 12px 10px;
 }
 .opsHref{
-    margin-inline: 8px;
-    padding: 9px 9px 9px 9px;
+    margin-inline: 8px; /* Margen en el plano x */
+    padding: 9px 9px 9px 9px; /* top left bottom right */
     background-color: #e4dddd;
 }
 .opsHref:hover{
     background-color: #bbb6b6;
 }
 .borderCi{
-    border-radius: 50%;
+    border-radius: 50%; /* Hace que nuestros elementos completamente circulares */
 }
 .transition{
-    transition: 500ms ease;
+    transition: 500ms ease; /* Nos da una animacion suave para los cambios dinamicos que podamos llegar a hacer en los elementos */
+    /* ms es milisegundos */
 }
 .pLow{
     opacity: 0.8;
@@ -83,16 +84,16 @@ html{
 }
 .imgAside{
     width: 380px;
-    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.2)); /* Le da una caja de sombra las imagenes png */
 }
 .imgEn{
     width: 20px;
     margin: 0px 5px 3px 5px;
 }
-.card-body a:hover{
+.card-body a:hover{ /* hover es evento de los elementos  */
     transition: 300ms ease;
     background-color: #07411f;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Transforma el tamaño del elemento */
 }
 .lblEn{
     width: 27%;
@@ -100,8 +101,34 @@ html{
     margin-bottom: 30px;
     border-radius: 10px;
 }
+.secSecon{
+    background-color: #f1eeee;
+}
 .lblEn:hover{
     background-color: #e4dddd;
+}
+.divLI{
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.divLI input{
+    outline: none;
+    border: none;
+    cursor: auto;
+}
+.lblNB{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #e4dddd;
+}
+.disabled{
+    display: none;
+}
+#lblNext{
+    transform: rotate(180deg);
 }
 #lblChange1{
     background-color: #368f5b;
@@ -113,6 +140,10 @@ html{
     background-color: #07411f;
     color: #fff;
 }
+#imgPro{
+    width: 290px;
+    height: 480px;
+}
 .pLow a{
     color: #000;
     opacity: 0.8;
@@ -123,7 +154,7 @@ html{
 #mainAs{
     height: 500px;
 }
-.card-body a, #btnPrinSM, #btnNos{
+.card-body a, #btnPrinSM, #btnNos, #btnCompra{
     background-color: #032546;
     border: none;
     padding: 5px 14px 5px 14px;
@@ -143,7 +174,4 @@ html{
 }
 iframe{
     margin-bottom: 15px;
-}
-.secSecon{
-    background-color: #f1eeee;
 }
